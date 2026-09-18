@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://aunts.21ido.com/sitemap.xml
