@@ -4,6 +4,6 @@
 
 本地预览：`python -m http.server 8080`，打开 http://localhost:8080 。
 
-上线域名：http://aunts.21ido.com/ 。启用 HTTPS 后统一修改 canonical、Open Graph URL、robots.txt 和 sitemap.xml 中的协议。备案完成后在页脚补充实际备案号和链接，不使用虚构编号。
+上线域名：https://aunts.21ido.com/ 。已启用 HTTPS，并同步 canonical、Open Graph URL、robots.txt 和 sitemap.xml。备案完成后在页脚补充实际备案号和链接，不使用虚构编号。
 
 部署目录：`/var/www/aunts-web`。现有 Nginx 的 `/api/`、`/admin/` 等接口路由保持代理，官网仅接管 `/`、`/index.html`、`/styles.css`、`/app.js`、`/assets/`、`/robots.txt`、`/sitemap.xml`。
