@@ -1,0 +1,12 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const source = path.resolve(process.argv[2] || '../aunts-wechat/miniprogram/utils/privacy.js');
+const {privacy} = require(source);
+const escape = text => text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const file = path.join(__dirname,'../privacy.html');
+let html = fs.readFileSync(file,'utf8');
+const [title,...paragraphs] = privacy.split('\n\n');
+const body = '<h1>'+escape(title)+'</h1>'+paragraphs.map(p=>'<p>'+escape(p)+'</p>').join('');
+html = html.replace(/<h1>[\s\S]*?(?=<a class="text-link" href="\/">)/,body);
+fs.writeFileSync(file,html);
+console.log('Privacy text synchronized from mini-program');
