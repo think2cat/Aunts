@@ -1,4 +1,4 @@
-![LOGO](./assets/miniapp-code.png)
+![LOGO](./assets/miniapp-code.jpg)
 
 # 姨妈们官网
 
