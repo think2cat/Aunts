@@ -1,4 +1,8 @@
+![LOGO](./assets/logo.png)
+
 # 姨妈们官网
+
+http://aunts.21ido.com/
 
 静态响应式官网，直接以 Nginx 提供，无 Node 生产依赖。介绍文案均为 HTML 文本，月历为非真实数据的功能示意。小程序码使用用户提供的原始图片。
 
